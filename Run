@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#SBATCH -A snic2020-15-186
+#SBATCH -p core
+#SBATCH -n 15
+#SBATCH -t 10:00:00
+#SBATCH -J Shannon
+  
+singularity exec /proj/snic2020-15-186/LinusBenchmark/Containers/Shannon_latest.sif shannon.py -o /proj/snic2020-15-186/LinusBenchmark/output/outputShannon/HomoSap/Large1/sample1 --left /proj/snic2020-15-186/LinusBenchmark/data/HomoSap/Large1_ENCSR362HMX/sample1/homosapLarge1Left.fastq.gz --right /proj/snic2020-15-186/LinusBenchmark/data/HomoSap/Large1_ENCSR362HMX/sample1/homosapLarge2Right.fastq.gz
