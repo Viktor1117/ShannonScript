@@ -6,4 +6,8 @@
 #SBATCH -t 10:00:00
 #SBATCH -J Shannon
   
-singularity exec /proj/snic2020-15-186/LinusBenchmark/Containers/Shannon_latest.sif shannon.py -o /proj/snic2020-15-186/LinusBenchmark/output/outputShannon/HomoSap/Large1/sample1 --left /proj/snic2020-15-186/LinusBenchmark/data/HomoSap/Large1_ENCSR362HMX/sample1/homosapLarge1Left.fastq.gz --right /proj/snic2020-15-186/LinusBenchmark/data/HomoSap/Large1_ENCSR362HMX/sample1/homosapLarge2Right.fastq.gz
+$ CelegansSample1
+singularity exec /proj/snic2020-15-186/LinusBenchmark/Containers/Shannon_latest.sif shannon.py --left /proj/snic2020-15-186/LinusBenchmark/data/Celegans/sample1/CelegansSample1Left.fastq.gz --right /proj/snic2020-15-186/LinusBenchmark/data/Celegans/sample1/CelegansSample1Right.fastq.gz -o /proj/snic2020-15-186/LinusBenchmark/output/outputShannon/Shannon/Celegans/sample1/
+
+$ CelegansSample2
+singularity exec /proj/snic2020-15-186/LinusBenchmark/Containers/Shannon_latest.sif shannon.py --left /proj/snic2020-15-186/LinusBenchmark/data/Celegans/sample2/CelLeft1.fastq.gz --right /proj/snic2020-15-186/LinusBenchmark/data/Celegans/sample2/Celright2.fastq.gz -o /proj/snic2020-15-186/LinusBenchmark/output/outputShannon/Celegans/sample2/
